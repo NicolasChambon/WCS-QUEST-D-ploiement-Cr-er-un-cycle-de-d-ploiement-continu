@@ -32,7 +32,7 @@ function App() {
       <Header>
         <Container>
           <h1>Wilders Book with CD</h1>
-          <p>Coucou</p>
+          <p>Coucou!</p>
         </Container>
       </Header>
       <Container>

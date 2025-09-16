@@ -16,14 +16,15 @@ const ALL_WILDERS = gql`
 `;
 
 export type WilderData = {
-  _id: string
-  name:string
-  city: string
-}
+  _id: string;
+  name: string;
+  city: string;
+};
 
 function App() {
-  
-  const { loading, error, data } = useQuery<{wilders:WilderData[]}>(ALL_WILDERS);
+  const { loading, error, data } = useQuery<{ wilders: WilderData[] }>(
+    ALL_WILDERS
+  );
   if (loading) return <p>Loading...</p>;
   if (error) return <p>Error : {error.message}</p>;
   return (
@@ -31,6 +32,7 @@ function App() {
       <Header>
         <Container>
           <h1>Wilders Book with CD</h1>
+          <p>Coucou</p>
         </Container>
       </Header>
       <Container>
